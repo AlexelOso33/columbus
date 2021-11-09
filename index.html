@@ -1,0 +1,225 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columbus by Alexis Sanchez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="sup-bar"></div>
+    <header>
+        <a href="#">
+            <div class="cont-logo">
+                <div class="logo">
+                    <i class="fas fa-bread-slice" style="width:100%;"></i>
+                </div>
+                <div class="title-logo">
+                    <h1 class="txt-handw">Columbus</h1>
+                </div>
+                <div class="sub-title-logo">
+                    <h3 class="txt-handw subtxt">Bakery Wholesale</h3>
+                </div>
+            </div>
+        </a>
+        <a class="config">
+            <i class="fas fa-ellipsis-v"></i>
+        </a>
+        <div class="profile-cont">
+            <div class="names-prof">
+                <h2>ANA MARÍA</h2>
+                <p>POS</p>
+            </div>
+            <div class="img-prof">
+                <img src="img/perfil.png" alt="foto perfil">
+            </div>
+        </div>
+    </header>
+    <aside>
+        <div class="cont-menu-nav">
+            <a href="#">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </aside>
+    <main>
+        <div class="cont-left">
+            <div class="cont-main">
+                <div class="info-sale">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>CANTIDAD</th>
+                                <th>PRODUCTO</th>
+                                <th>TAX</th>
+                                <th>TOTAL</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" class="td-add" data-td="3.5">
+                                    <span class="cant-prod">1</span><button class="add-p"><i class="fas fa-plus-circle"></i></button><button class="remove-p"><i class="fas fa-minus-circle"></i></button></span>
+                                </td>
+                                <td>COCA-COLA</td>
+                                <td class="bold">3.5</td>
+                                <td class="bold">3.5</td>
+                                <td><button class="del-prod"><i class="fas fa-trash-alt"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="td-add" data-td="3.5"><span class="cant-prod">1</span><button class="add-p"><i class="fas fa-plus-circle"></i></button><button class="remove-p"><i class="fas fa-minus-circle"></i></button></td>
+                                <td>MANZANA POSTOBON</td>
+                                <td class="bold">3.5</td>
+                                <td class="bold">3.5</td>
+                                <td><button class="del-prod"><i class="fas fa-trash-alt"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="td-add" data-td="3.5"><span class="cant-prod">1</span><button class="add-p"><i class="fas fa-plus-circle"></i></button><button class="remove-p"><i class="fas fa-minus-circle"></i></button></td>
+                                <td>NARANJA POSTOBON</td>
+                                <td class="bold">3.5</td>
+                                <td class="bold">3.5</td>
+                                <td><button class="del-prod"><i class="fas fa-trash-alt"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="splitter"></div>
+                <div class="cont-total">
+                    <span>TOTAL</span>
+                    <span id="total">10.5</span>
+                </div>
+            </div>
+            <div class="but-adds">
+                <button class="button-add"><div class="left-img"><i class="far fa-address-card"></i></div><span class="spn-btn">DESCUENTO EMPLEADOS</span></button>
+                <button class="button-add"><div class="left-img"><i class="fas fa-file-invoice-dollar"></i></div><span class="spn-btn">VISTA CLIENTE</span></button>
+                <button class="button-add"><div class="left-img"><i class="fas fa-percent"></i></div><span class="spn-btn">CÓDIGO PROMOCIONAL</span></button>
+            </div>
+        </div>
+        <div class="cont-right">
+            <div class="cont-main products-addon">
+                <div class="nav-product">
+                    <ul>
+                        <li><a href="#" id="cat1">BEBIDAS</a></li>
+                        <li><a href="#" id="cat2">COMIDAS</a></li>
+                        <li><a href="#" id="cat3">REPOSTERÍA Y PANADERÍA</a></li>
+                        <li><a href="#" id="cat4">REFRIGERADOS</a></li>
+                        <li><a href="#" id="grid-view"><i class="fas fa-th"></i></a></li>
+                    </ul>
+                </div>
+                <div class="cont-mas-prods">
+                    <div class="cont-products">
+                        <button data-id="COCA-COLA/3.5">
+                            <div class="prod-add">
+                                <div class="img-cont">
+                                    <img src="img/cocacola-lata.jpg" alt="coca cola lata">
+                                </div>
+                                <span>COCA-COLA</span>
+                                <span>3.5 CAD</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="cont-products">
+                        <button data-id="COCA-COLA ZERO/3.5">
+                            <div class="prod-add">
+                                <div class="img-cont">
+                                    <img src="img/cocacola-zero.jpg" alt="coca cola zero">
+                                </div>
+                                <span>COCA-COLA ZERO</span>
+                                <span>3.5 CAD</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="cont-products">
+                        <button data-id="MANZANA POSTOBON/3.5">
+                            <div class="prod-add">
+                                <div class="img-cont">
+                                    <img src="img/postobon-manzana-lata.jpg" alt="postobon manzana">
+                                </div>
+                                <span>MANZANA POST.</span>
+                                <span>3.5 CAD</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="cont-products">
+                        <button data-id="AGUA NATURAL/3.5">
+                            <div class="prod-add">
+                                <div class="img-cont">
+                                    <img src="img/agua-500ml.jpg" alt="agua natural">
+                                </div>
+                                <span>AGUA NATURAL</span>
+                                <span>3.5 CAD</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="cont-products">
+                        <button data-id="NARANJA POSTOBON/3.5">
+                            <div class="prod-add">
+                                <div class="img-cont">
+                                    <img src="img/naranja-postobon.jpg" alt="naranja post">
+                                </div>
+                                <span>NARANJA POST.</span>
+                                <span>3.5 CAD</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="cont-products">
+                        <button data-id="TROPICAL 2L/3.5">
+                            <div class="prod-add">
+                                <div class="img-cont">
+                                    <img src="img/tropical-ecuador-botella.jpg" alt="tropical 2l">
+                                </div>
+                                <span>TROPICAL 2L</span>
+                                <span>3.5 CAD</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="cont-products">
+                        <button data-id="PIÑA TOSTOBON/3.5">
+                            <div class="prod-add">
+                                <div class="img-cont">
+                                    <img src="img/postobon-pina.jpg" alt="pina post">
+                                </div>
+                                <span>PIÑA POSTOBON</span>
+                                <span>3.5 CAD</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="back-products">
+                        <a href="#" id="back"><i class="fas fa-arrow-circle-left"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-pay-gen">
+                <div class="paym-cont">
+                    <button class="button-pay" id="pay-dollar"><img src="img/pngwing.com.png" alt="dollar"></button>
+                    <button class="button-pay" id="pay-visa"><img src="img/visa.png" alt="visa"></button>
+                    <button class="button-pay" id="pay-mcard"><img src="img/mastercard.png" alt="mastercard"></button>
+                    <button class="button-pay" id="pay-uber"><img src="img/uber-eats.jpg" alt="uber eats"></button>
+                    <button class="button-pay" id="pay-debit">
+                        <div class="debit-card">
+                            <span>Débito</span>
+                            <i class="far fa-credit-card"></i>
+                        </div>
+                    </button>
+                    <button class="button-pay" id="pay-add"><i class="fas fa-plus"></i></button>
+                </div>
+                <button id="paynow">PAGAR</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- Scripting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"></script>
+    <script src="js/functions.js "></script>
+</body>
+</html>

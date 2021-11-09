@@ -1,0 +1,429 @@
+/* MARCADORES UNIVERSALES */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--txt-color);
+    transition: .2s ease all;
+    text-decoration: none;
+}
+
+header a {
+    color: #fff;
+}
+
+a:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cont-mas-prods button {
+    background-color: transparent;
+}
+
+.cont-product:hover {
+    cursor: pointer;
+}
+
+:root {
+    --primary-color: #114f55;
+    --secondary-color: #007383;
+    --bg-color: #ededed;
+    --main-bg-color: #fff;
+    --odd-color: #f7f7f7;
+    --txt-color: #737776;
+    --nav-color: #454850;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+li, span {
+    font-size: .85rem;
+    color: var(--txt-color);
+}
+
+button {
+    color: var(--txt-color);
+    border: none;
+}
+
+button.add-p, button.remove-p, button.del-prod {
+    background-color: transparent;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f7f7f7!important;
+} 
+
+.selected-paym {
+    background-color: var(--bg-color)!important;
+}
+
+th {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+td {
+    font-size: 11px;
+}
+
+td, th {
+    padding: 0.75rem;
+    vertical-align: top;
+    color: var(--txt-color);
+    vertical-align: middle;
+}
+
+thead th {
+    vertical-align: bottom;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* ESTILOS */
+
+.sup-bar {
+    width: 100%;
+    height: 1.5rem;
+    background-color: var(--primary-color);
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+header {
+    display: block;
+    /* width: 100%; */
+    height: 6.3rem;
+    padding: 2.2rem 2rem 2rem 2rem;
+    background-color: var(--secondary-color);
+    margin-left: 6rem;
+}
+
+aside {
+    display: block;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--nav-color);
+    width: 6rem;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.cont-menu-nav {
+    margin-top: 3.5rem;
+    margin-left: 2.5rem;
+    color: #fff;
+}
+
+.cont-logo > div {
+    display: inline-block;
+}
+
+.cont-logo {
+    float: left;
+}
+
+.txt-handw {
+    font-family: 'Ephesis', cursive!important;
+    color: #fff;
+}
+
+.subtxt {
+    font-size: 1rem;
+}
+
+.logo {
+    color: #fff;
+    width: 3rem;
+}
+
+.logo i {
+    width: 100%;
+}
+
+.subtitle-logo h3 {
+    font-size: 1.2rem;
+}
+
+.profile-cont, .config {
+    display: block;
+    float: right;
+}
+
+.profile-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.names-prof, .config {
+    color: #fff;
+}
+
+.config {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.names-prof h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.names-prof p {
+    font-size: .8rem;
+    text-align: right;
+}
+
+.names-prof {
+    margin-top: 0.5rem;
+}
+
+.img-prof {
+    width: 4rem;
+    margin-left: .2rem;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;;
+}
+
+.img-cont {
+    width: 8rem;
+    margin: 0 auto;
+}
+
+main {
+    margin-left: 6rem;
+    padding: 1.5rem;
+    background-color: var(--bg-color);
+}
+
+.cont-main {
+    padding: 1rem;
+    background-color: #fff;
+    height: 30rem;
+    -webkit-box-shadow: 1px 1px 7px 0 #C9C9C9;
+    box-shadow: 1px 1px 7px 0 #C9C9C9;
+    position: relative;
+    width: 100%;
+}
+
+.cont-left {
+    width: 380px;
+    float: left;
+}
+
+.add-p, .remove-p, .del-prod {
+    font-size: 1.6rem;
+    color: var(--txt-color);
+}
+
+tbody {
+    text-align: center;
+}
+
+.td-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.splitter {
+    display: block;
+    position: absolute;
+    bottom: 7rem;
+    width: 70%;
+    left: 50%;
+    height: 2px;
+    background-color: var(--txt-color);
+    transform: translateX(-50%);
+}
+
+.cont-total {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.cont-total span {
+    margin: 0 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cont-total span:nth-child(1) {
+    color: #383838;
+}
+
+.cont-total span:nth-child(2) {
+    color: #fdb85c;
+}
+
+.button-add {
+    padding: 1rem;
+    background-color: #fff;
+    margin: 10px 10px 10px 0;
+    -webkit-box-shadow: 1px 1px 7px 0 #c9c9c9;
+    box-shadow: 1px 1px 7px 0 #c9c9c9;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.but-adds button:nth-child(1){
+    width: 48%;
+    float: left;
+    margin-right: 0;
+    height: 80px;
+}
+
+.but-adds button:nth-child(2){
+    width: 48%;
+    float: right;
+    margin-right: 0;
+    height: 80px;
+}
+
+.but-adds button:nth-child(3) {
+    width: 100%;
+    height: 80px;
+}
+
+.left-img {
+    font-size: 30px;
+}
+
+.cont-right {
+    margin-left: 400px;
+}
+
+.nav-product ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-product ul li {
+    list-style: none;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.nav-product ul li:first-child {
+    border-bottom: 2px solid #fdb85c;
+}
+
+a#grid-view {
+    font-size: 30px;
+}
+
+.cont-mas-prods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cont-products {
+    width: 25%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.prod-add span {
+    display: block;
+    width: 60%;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.prod-add span:nth-child(2) {
+    font-weight: bold;
+}
+
+.back-products {
+    font-size: 50px;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    color: var(--txt-color);
+}
+
+.button-pay {
+    width: 30%;
+    height: 80px;
+    padding: 1rem;
+    background-color: #fff;
+    margin: 10px 10px 0 0;
+    -webkit-box-shadow: 1px 1px 7px 0 #c9c9c9;
+    box-shadow: 1px 1px 7px 0 #c9c9c9;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-pay img {
+    width: 80px;
+}
+
+.paym-cont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.pay-button {
+    position: absolute;
+    bottom: 5px;
+    right: 24px;
+    width: 15%;
+}
+
+#paynow {
+    width: 35%;
+    background-color: var(--nav-color);
+    margin-top: 10px;
+    color: #fdb85c;
+    font-size: 30px;
+}
+.cont-pay-gen {
+    display: flex;
+    width: 100%;
+}
